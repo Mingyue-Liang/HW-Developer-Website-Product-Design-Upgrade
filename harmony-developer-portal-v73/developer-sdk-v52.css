@@ -1,0 +1,12 @@
+.dt-grid.sdk{grid-template-columns:minmax(0,1fr);gap:12px;max-width:980px;margin:0 auto}
+.dt-sdk-card{display:flex;align-items:center;gap:24px;min-height:145px;padding:20px 28px;border-radius:18px;background:#fff}
+.dt-sdk-logo{display:grid;place-items:center;flex:none;width:78px;height:78px;font-weight:850;line-height:1;letter-spacing:-.08em}
+.dt-sdk-logo.easemob{color:#079cdd;font-size:79px;font-weight:400;transform:rotate(-16deg)}
+.dt-sdk-logo.gravity{color:#3777e6;font-size:70px;font-weight:900}
+.dt-sdk-logo.quick{font-size:73px;font-weight:950;font-style:italic;background:linear-gradient(140deg,#4bd6ed 10%,#125bfa 75%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.dt-sdk-logo.baidu{width:78px;height:78px;border:1px solid #e0e5e9;border-radius:16px;background:linear-gradient(#fff 70%,#e4f9fc 71%);color:#fff;font-size:24px;letter-spacing:-.04em;position:relative}
+.dt-sdk-logo.baidu:before{content:"";position:absolute;inset:10px 17px 15px;background:#f82739;border-radius:50% 50% 50% 0;transform:rotate(-45deg);z-index:0}.dt-sdk-logo.baidu{isolation:isolate}.dt-sdk-logo.baidu:after{content:"du";position:absolute;color:#fff;z-index:1}
+.dt-sdk-logo.sensear{font-size:70px;font-weight:750;background:linear-gradient(140deg,#48a1ff,#de3cc2 60%,#ffa1c7);-webkit-background-clip:text;background-clip:text;color:transparent}
+.dt-sdk-logo.thinkive{color:#315ff0;font-size:18px;letter-spacing:-.06em}
+.dt-sdk-copy{min-width:0;flex:1}.dt-sdk-copy h3{margin:0 0 6px;font-size:23px;line-height:1.25;color:#1c1d20}.dt-sdk-copy p{margin:0 0 8px;color:#62666b;font-size:16px;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.dt-sdk-meta{display:flex;align-items:center;gap:20px;flex-wrap:wrap;color:#767b81;font-size:13px}.dt-sdk-meta span{white-space:nowrap}
+@media(max-width:700px){.dt-sdk-card{gap:15px;min-height:116px;padding:17px}.dt-sdk-logo{width:55px;height:55px;font-size:50px!important}.dt-sdk-logo.baidu{width:55px;height:55px;font-size:17px!important}.dt-sdk-logo.baidu:before{inset:7px 12px 11px}.dt-sdk-logo.thinkive{font-size:12px!important}.dt-sdk-copy h3{font-size:17px}.dt-sdk-copy p{font-size:13px}.dt-sdk-meta{gap:3px 13px;font-size:11px}.dt-sdk-meta span{white-space:normal}}

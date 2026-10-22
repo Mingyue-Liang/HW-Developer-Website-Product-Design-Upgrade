@@ -1,0 +1,78 @@
+.ais-open .topbar{z-index:85}
+.ais-open .header-popover{z-index:90}
+.ais-panel{position:fixed;z-index:79;top:var(--ais-top,76px);right:10px;width:min(540px,calc(100vw - 20px));height:calc(100dvh - var(--ais-top,76px) - 10px);display:flex;flex-direction:column;overflow:hidden;border:1px solid #dfe8f2;border-radius:18px;background:linear-gradient(160deg,#fff 0%,#fff 48%,#eaf9fc 76%,#d2e4ff 100%);box-shadow:-16px 10px 55px #13223a29;color:#151a20}
+.ais-panel.immersive{right:10px;width:calc(100vw - 20px);height:calc(100dvh - var(--ais-top,76px) - 10px)}
+.ais-resize-width,.ais-resize-height,.ais-resize-corner{position:absolute;z-index:3;touch-action:none}
+.ais-resize-width{top:82px;bottom:20px;left:0;width:8px;cursor:ew-resize}
+.ais-resize-height{right:20px;bottom:0;left:20px;height:8px;cursor:ns-resize}
+.ais-resize-corner{left:0;bottom:0;width:26px;height:26px;border:0;background:transparent;cursor:nesw-resize}
+.ais-resize-corner:before{content:"";position:absolute;left:7px;bottom:7px;width:12px;height:12px;border-left:2px solid #7f91a8;border-bottom:2px solid #7f91a8;border-radius:0 0 0 3px}
+.ais-resize-corner:hover:before,.ais-resize-corner:focus-visible:before{border-color:#0057ff}
+.ais-panel.immersive .ais-resize-width,.ais-panel.immersive .ais-resize-height,.ais-panel.immersive .ais-resize-corner{display:none}
+.ais-resizing{user-select:none!important}
+.ais-panel.immersive .ais-content,.ais-panel.immersive .ais-composer-wrap{width:min(900px,100%);margin-left:auto;margin-right:auto}
+.ais-header{height:82px;flex:none;display:flex;align-items:center;gap:12px;padding:14px 22px;background:#fff}
+.ais-header .aiw-brand-icon{width:43px;height:43px}
+.ais-header>strong{font-size:22px;font-weight:800;color:#15191f;white-space:nowrap}
+.ais-header .aiw-head-actions{margin-left:auto;gap:3px}
+.ais-header .aiw-head-actions button{width:39px;height:39px}
+.ais-header .aiw-head-actions button:last-child{width:43px;height:43px}
+.ais-context{flex:none;margin:12px 20px 0;padding:10px 12px;border:1px solid #e9edf4;border-radius:10px;background:#f7f8fb;color:#7d8796;font-size:11px;line-height:1.55}
+.ais-context b{color:#405b82}
+.ais-content{flex:1;min-height:0;overflow:auto;padding:0 24px 24px;scrollbar-width:thin}
+.ais-welcome{padding-top:clamp(78px,15vh,155px)}
+.ais-welcome h2{font-size:clamp(28px,3.4vw,36px);line-height:1.38;letter-spacing:-.05em;margin:0 0 29px;font-weight:850;color:#0d1015}
+.ais-quick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:10px}
+.ais-quick button,.ais-suggestions button{width:100%;border:0;border-radius:15px;background:#f6f7f9;color:#1b222b;text-align:left;font-weight:550}
+.ais-quick button{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:60px;padding:14px 18px;font-size:17px}
+.ais-quick button span{font-size:23px;color:#91959b}
+.ais-suggestions{display:grid;gap:10px}
+.ais-welcome{padding-top:24px}
+.ais-welcome h2{font-size:28px;margin-bottom:22px}
+.ais-welcome-subtitle{margin:-12px 0 20px;color:#6f7680;font-size:14px;line-height:1.5}
+.ais-suggestion-group{display:grid;gap:8px;margin-bottom:12px}
+.ais-suggestion-group h3{margin:6px 0 1px;font-size:15px;color:#5e6879}
+.ais-suggestion-group button{min-height:44px;padding:11px 14px;font-size:14px}
+.ais-suggestions button{min-height:61px;padding:14px 18px;font-size:16px;line-height:1.45}
+.ais-quick button:hover,.ais-suggestions button:hover{background:#eaf0fc}
+.ais-composer-wrap{flex:none;padding:15px 22px 22px}
+.ais-composer{display:flex;align-items:center;gap:8px;min-height:65px;padding:6px 7px 6px 16px;border:4px solid #ffffff9c;border-radius:40px;background:#f8fafc;box-shadow:0 0 0 4px #7295bb38}
+.ais-composer input{flex:1;min-width:0;border:0;outline:0;background:transparent;font-size:15px;color:#2d3745}
+.ais-composer input::placeholder{color:#999fa7}
+.ais-composer button{width:43px;height:43px;flex:none;display:grid;place-items:center;border:0;border-radius:50%;background:#e9edf2;color:#9ca3ad;font-size:24px;line-height:1}
+.ais-composer button:hover{background:#dce8ff;color:#1e61c7}
+.ais-composer .ais-voice-button{width:39px;height:39px;background:transparent;color:#657486}
+.ais-composer .ais-voice-button svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ais-composer .ais-voice-button:hover{background:#e8f1ff;color:#0057ff}
+.ais-voice-panel{position:absolute;z-index:4;right:15px;bottom:100px;left:15px;padding:18px;border-radius:20px;background:#11141b;color:#f5f7fb;box-shadow:0 20px 55px #11182755}
+.ais-voice-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ais-voice-head strong{font-size:17px;font-weight:650}
+.ais-voice-head button{border:0;background:transparent;color:#fff;font-size:28px;line-height:1;width:29px;height:29px}
+.ais-voice-status{display:flex;align-items:center;gap:10px;margin:24px 0;font-size:17px}
+.ais-voice-status i{display:inline-block;width:15px;height:15px;flex:none;border-radius:50%;background:#79a4ff;box-shadow:0 0 15px #79a4ff}
+.ais-voice-status i.paused{background:#87909f;box-shadow:none}
+.ais-voice-context{display:inline-block;border-radius:9px;padding:9px 11px;background:#2a3c70;color:#f3f5ff;font-size:12px}
+.ais-voice-note{font-size:12px;line-height:1.6;color:#c5cbd4;margin:16px 0}
+.ais-voice-actions{display:flex;gap:7px;flex-wrap:wrap}
+.ais-voice-actions button{border:0;border-radius:10px;padding:9px 11px;background:#303541;color:#f7f8fb;font-size:11px}
+.ais-voice-actions button:first-child{background:#385293}
+.ais-voice-actions button:disabled{opacity:.5}
+.ais-note{margin:11px 8px 0;color:#9aa8bb;font-size:10px;line-height:1.5;text-align:center}
+.ais-chat{padding-top:25px;display:grid;gap:14px;align-content:start}
+.ais-bubble{max-width:88%;border-radius:15px;padding:13px 15px;background:#fff;color:#455367;font-size:13px;line-height:1.75;box-shadow:0 4px 15px #24436a0c;overflow-wrap:anywhere}
+.ais-bubble.user{justify-self:end;background:#e8f0ff;color:#28446e}
+.ais-bubble.assistant{justify-self:start}
+.ais-bubble strong{display:block;color:#28446d;margin-bottom:4px}
+.ais-bubble p{margin:0}
+.ais-bubble a{display:inline-block;color:#0057ff;font-weight:700;margin-top:7px;text-decoration:underline}
+.ais-history{padding-top:35px}
+.ais-history h2{font-size:24px;margin:0 0 6px}
+.ais-history>p{color:#8a97a7;font-size:12px;margin:0 0 17px}
+.ais-history>button{width:100%;display:block;text-align:left;border:1px solid #e1e9f5;border-radius:11px;background:#fff;padding:13px 15px;margin:0 0 9px}
+.ais-history>button:hover{border-color:#9cbbf3;background:#f7faff}
+.ais-history>button strong{display:block;font-size:13px;color:#283b56;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ais-history>button small{display:block;color:#8e9aac;font-size:10px;margin-top:4px}
+.ais-empty{padding:24px;border:1px dashed #d5e0ed;border-radius:12px;background:#fff;color:#8794a5;font-size:12px}
+.ais-panel.immersive .ais-welcome{padding-top:clamp(55px,10vh,125px)}
+@media(max-width:600px){.ais-header{height:72px;padding:12px 14px;gap:8px}.ais-header .aiw-brand-icon{width:36px;height:36px}.ais-header>strong{font-size:19px}.ais-header .aiw-head-actions{gap:0}.ais-header .aiw-head-actions button{width:33px;height:35px}.ais-header .aiw-head-actions button:last-child{width:38px;height:38px}.ais-header .aiw-head-actions svg{width:21px;height:21px}.ais-content{padding-left:20px;padding-right:20px}.ais-welcome h2{font-size:29px}.ais-quick button{font-size:15px;padding:12px 14px}.ais-suggestions button{font-size:14px}.ais-composer-wrap{padding:12px 18px 18px}}
+@media(max-height:650px){.ais-welcome{padding-top:36px}.ais-welcome h2{margin-bottom:17px}.ais-quick button,.ais-suggestions button{min-height:48px}.ais-suggestions{gap:7px}}
